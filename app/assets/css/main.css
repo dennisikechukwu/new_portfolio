@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+/*
+ * Design Tokens
+ * Deliberate palette: monochrome with warm whites.
+ * Every value here has a reason — do not add tokens speculatively.
+ */
+@theme {
+  --color-bg: #fafaf9;
+  --color-surface: #ffffff;
+  --color-text-primary: #0a0a0a;
+  --color-text-secondary: #525252;
+  --color-text-tertiary: #a3a3a3;
+  --color-border: #e5e5e5;
+  --color-border-light: #f0f0f0;
+
+  /* Button tokens */
+  --color-btn-primary-bg: #0a0a0a;
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-hover: #1a1a1a;
+
+  /* Font families — loaded via Google Fonts stylesheet */
+  --font-display: "Archivo Black", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Custom Animations */
+  --animate-wave: wave 2.5s infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate(0.0deg) }
+  100% { transform: rotate(0.0deg) }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  font-size: 16px;
+}
