@@ -7,7 +7,7 @@ export interface SocialLink {
 export const socials: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/Dennis779',
+    url: 'https://github.com/dennisikechukwu',
     iconName: 'github',
   },
   {
