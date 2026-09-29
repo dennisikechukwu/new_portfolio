@@ -29,6 +29,23 @@ export const caseStudies: CaseStudy[] = [
     liveUrl: 'https://winichfarms.com'
   },
   {
+    id: 'kohrah',
+    title: 'Kohrah',
+    year: '2026',
+    role: 'Full-Stack Engineering',
+    overview: 'A professional networking and relationship-continuity platform. Kohrah enables users to create dynamic public profiles, share live vCards, and securely capture connections.',
+    keyFeatures: [
+      'Implemented passwordless Magic Link authentication via Supabase and Resend.',
+      'Designed dynamic public profiles generating .vcf files on the fly and logging analytics.',
+      'Built a lead capture system allowing guests to securely leave contact info.',
+      'Engineered dynamic, scannable QR codes for seamless networking at live events.'
+    ],
+    techStack: ['Nuxt', 'Vue', 'TypeScript', 'Supabase'],
+    imageUrl: '/kohrah.png',
+    liveUrl: 'https://kohrah.dennislab.me/',
+    githubUrl: 'https://github.com/dennisikechukwu/Kohrah'
+  },
+  {
     id: 'hemo-grid',
     title: 'HemoGrid',
     year: '',
