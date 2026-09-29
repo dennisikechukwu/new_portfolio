@@ -8,6 +8,13 @@ export interface Project {
 
 export const featuredProjects: Project[] = [
   {
+    id: 'kohrah',
+    title: 'Kohrah',
+    shortDescription: 'Professional networking platform featuring dynamic public profiles, live vCards, and secure QR code lead capture.',
+    liveUrl: 'https://kohrah.dennislab.me/',
+    githubUrl: 'https://github.com/dennisikechukwu/Kohrah'
+  },
+  {
     id: 'hemo-grid',
     title: 'HemoGrid',
     shortDescription: 'Real-Time Blood Availability & Emergency Coordination Network designed to handle critical data under high concurrency.',
