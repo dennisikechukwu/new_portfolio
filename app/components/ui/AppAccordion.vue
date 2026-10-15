@@ -16,8 +16,8 @@ const emit = defineEmits<{
   <div class="border-b border-border last:border-0">
     <button
       class="w-full py-5 md:py-6 flex items-center justify-between text-left focus:outline-none hover:opacity-70 transition-opacity duration-200 cursor-pointer"
-      @click="emit('toggle')"
       :aria-expanded="isOpen"
+      @click="emit('toggle')"
     >
       <h3 class="text-[15px] md:text-[16px] font-body text-text-primary">{{ title }}</h3>
       <span class="text-text-tertiary ml-4 flex-shrink-0 transition-transform duration-200" :class="{ 'rotate-180': isOpen }">

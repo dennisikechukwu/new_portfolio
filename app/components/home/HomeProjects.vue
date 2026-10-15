@@ -19,7 +19,7 @@ function toggleProject(id: string) {
         Projects
       </h2>
       <p class="mt-5 text-[15px] md:text-[16px] leading-[1.7] text-text-secondary max-w-[500px] mx-auto">
-        A record of selected professional roles, key responsibilities, and technical contributions across software engineering projects.
+        A curated selection of applications, distributed systems, and digital products I have built and architected.
       </p>
     </div>
 
@@ -52,7 +52,18 @@ function toggleProject(id: string) {
             class="px-4 text-text-secondary hover:text-text-primary transition-colors"
           >
             <HugeiconsIcon :icon="Github01Icon" :size="16" />
-            Source Code
+            {{ project.backendGithubUrl ? 'Frontend Code' : 'Source Code' }}
+          </AppButton>
+
+          <AppButton
+            v-if="project.backendGithubUrl"
+            :href="project.backendGithubUrl"
+            size="sm"
+            variant="ghost"
+            class="px-4 text-text-secondary hover:text-text-primary transition-colors"
+          >
+            <HugeiconsIcon :icon="Github01Icon" :size="16" />
+            Backend Code
           </AppButton>
         </div>
       </AppAccordion>

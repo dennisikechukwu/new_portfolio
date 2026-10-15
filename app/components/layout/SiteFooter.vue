@@ -8,7 +8,6 @@ import {
   MapIcon
 } from '@hugeicons/core-free-icons'
 import { socials } from '~/data/socials'
-import { Vue3Lottie } from 'vue3-lottie'
 
 const socialIconMap: Record<string, unknown> = {
   github: Github01Icon,

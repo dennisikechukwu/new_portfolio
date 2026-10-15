@@ -54,7 +54,7 @@ const interests = [
           
           <!-- Each Interest Block -->
           <div 
-            v-for="(interest, idx) in interests" 
+            v-for="interest in interests" 
             :key="interest.title"
           >
             <!-- Interest Header -->
@@ -77,9 +77,9 @@ const interests = [
                   :alt="`${interest.title} media ${srcIdx + 1}`"
                   class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   loading="lazy"
-                />
+                >
                 <!-- Subtle Vignette Overlay -->
-                <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"/>
               </AppScrollReveal>
             </div>
           </div>
