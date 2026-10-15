@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { HugeiconsIcon } from '@hugeicons/vue'
 import { Menu02Icon, Cancel01Icon, ArrowUpRight01Icon } from '@hugeicons/core-free-icons'
-import { primaryNav, allNav } from '~/data/navigation'
+import { allNav } from '~/data/navigation'
 
 const isMobileMenuOpen = ref(false)
 
@@ -49,7 +49,7 @@ watch(() => route.path, () => closeMenu())
             <span 
               v-if="route.path === item.to || route.path.startsWith(item.to + '/')" 
               class="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-[4px] h-[4px] bg-text-primary rounded-full"
-            ></span>
+            />
           </NuxtLink>
         </nav>
 
@@ -119,7 +119,7 @@ watch(() => route.path, () => closeMenu())
               <span 
                 v-if="route.path === item.to || route.path.startsWith(item.to + '/')"
                 class="absolute left-0 w-1.5 h-1.5 bg-text-primary rounded-full -ml-4"
-              ></span>
+              />
               {{ item.label }}
             </NuxtLink>
 

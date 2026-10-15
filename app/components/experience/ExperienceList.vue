@@ -43,7 +43,7 @@ import { workExperience } from '~/data/experience'
             <ul class="space-y-4 max-w-3xl">
               <li v-for="(point, idx) in job.highlights" :key="idx" class="flex items-start gap-3">
                 <span class="mt-[7px] flex-shrink-0 w-[10px] h-[10px] border border-text-primary/30 rounded-[2px] relative">
-                  <span class="absolute inset-[3px] bg-text-primary rounded-[1px]"></span>
+                  <span class="absolute inset-[3px] bg-text-primary rounded-[1px]"/>
                 </span>
                 <span class="text-[15px] md:text-[16px] text-text-secondary font-body font-light leading-[1.8]">{{ point }}</span>
               </li>

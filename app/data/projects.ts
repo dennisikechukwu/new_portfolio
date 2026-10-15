@@ -4,9 +4,18 @@ export interface Project {
   shortDescription: string
   liveUrl?: string
   githubUrl?: string
+  backendGithubUrl?: string
 }
 
 export const featuredProjects: Project[] = [
+  {
+    id: 'diffvera',
+    title: 'Diffvera',
+    shortDescription: 'Pull request intelligence platform powered by Java 25, Spring Boot, and Spring AI, detecting code-comment drift, security risks, and architectural violations.',
+    liveUrl: 'https://diffvera.vercel.app',
+    githubUrl: 'https://github.com/dennisikechukwu/diffvera-frontend',
+    backendGithubUrl: 'https://github.com/dennisikechukwu/diffvera-backend'
+  },
   {
     id: 'kohrah',
     title: 'Kohrah',
