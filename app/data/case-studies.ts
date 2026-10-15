@@ -9,9 +9,28 @@ export interface CaseStudy {
   imageUrl: string
   liveUrl?: string
   githubUrl?: string
+  backendGithubUrl?: string
 }
 
 export const caseStudies: CaseStudy[] = [
+  {
+    id: 'diffvera',
+    title: 'Diffvera',
+    year: '2026',
+    role: 'Full-Stack Architecture & AI Engineering',
+    overview: 'An intelligent pull request review and code intelligence platform. Diffvera pairs a containerized Java 25 / Spring Boot backend powered by Spring AI with an intuitive Nuxt 4 frontend, analyzing code changes before merge to flag correctness issues, security risks, code-comment drift, and architectural boundary violations.',
+    keyFeatures: [
+      'Engineered a production Java 25 & Spring Boot microservice containerized with Docker, integrating Spring AI for intelligent diff analysis.',
+      'Crafted prompt architectures targeting code-comment drift, contract compliance, edge cases, and data exposure vulnerabilities.',
+      'Implemented architectural boundary enforcement to catch cross-layer dependency leaks (e.g., service modules reaching into controllers).',
+      'Built a Raycast-inspired, keyboard-friendly UI with Nuxt 4, Vue 3, TypeScript, and Tailwind CSS offering contextual code inspection.'
+    ],
+    techStack: ['Java 25', 'Spring Boot', 'Spring AI', 'Docker', 'Nuxt 4', 'Vue 3', 'TypeScript', 'Tailwind CSS'],
+    imageUrl: '/diffvera.png',
+    liveUrl: 'https://diffvera.vercel.app',
+    githubUrl: 'https://github.com/dennisikechukwu/diffvera-frontend',
+    backendGithubUrl: 'https://github.com/dennisikechukwu/diffvera-backend'
+  },
   {
     id: 'winich-farms',
     title: 'Winich Farms',

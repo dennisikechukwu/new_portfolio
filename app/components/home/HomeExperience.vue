@@ -40,7 +40,7 @@ function toggleExperience(id: string) {
           <ul class="space-y-3">
             <li v-for="(point, idx) in exp.highlights" :key="idx" class="flex items-start gap-3">
               <span class="mt-[7px] flex-shrink-0 w-[10px] h-[10px] border border-text-primary/30 rounded-[2px] relative">
-                <span class="absolute inset-[3px] bg-text-primary rounded-[1px]"></span>
+                <span class="absolute inset-[3px] bg-text-primary rounded-[1px]"/>
               </span>
               <span class="text-[14px] md:text-[15px] text-text-secondary font-body font-light leading-relaxed">{{ point }}</span>
             </li>

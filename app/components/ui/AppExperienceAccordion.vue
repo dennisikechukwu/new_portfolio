@@ -18,8 +18,8 @@ const emit = defineEmits<{
   <div class="border-b border-border last:border-0">
     <button
       class="w-full py-6 md:py-8 flex flex-col focus:outline-none hover:opacity-70 transition-opacity duration-200 cursor-pointer text-left"
-      @click="emit('toggle')"
       :aria-expanded="isOpen"
+      @click="emit('toggle')"
     >
       <div class="w-full flex items-start justify-between gap-4">
         <h3 class="text-[15px] md:text-[16px] font-body text-text-primary text-left">{{ role }}</h3>
